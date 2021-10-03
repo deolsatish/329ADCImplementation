@@ -7,36 +7,32 @@ SW[0] => Mux2.IN2
 SW[0] => Mux3.IN2
 SW[0] => Mux4.IN2
 SW[0] => Mux5.IN2
-SW[0] => Mux6.IN2
-SW[0] => Mux7.IN2
 SW[1] => Mux0.IN1
 SW[1] => Mux1.IN1
 SW[1] => Mux2.IN1
 SW[1] => Mux3.IN1
 SW[1] => Mux4.IN1
 SW[1] => Mux5.IN1
-SW[1] => Mux6.IN1
-SW[1] => Mux7.IN1
 SW[2] => Mux0.IN0
 SW[2] => Mux1.IN0
 SW[2] => Mux2.IN0
 SW[2] => Mux3.IN0
 SW[2] => Mux4.IN0
 SW[2] => Mux5.IN0
-SW[2] => Mux6.IN0
-SW[2] => Mux7.IN0
-LED[0] << Mux7.DB_MAX_OUTPUT_PORT_TYPE
-LED[1] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
-LED[2] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
-LED[3] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
-LED[4] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
-LED[5] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
-LED[6] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
-LED[7] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+LED[0] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+LED[3] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+LED[4] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+LED[5] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+LED[6] << pressure_buttons[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[7] << pressure_buttons[1].DB_MAX_OUTPUT_PORT_TYPE
 ADC_SCLK << adc_control:ADC.ADC_SCLK
 ADC_CONVST << adc_control:ADC.ADC_CS_N
 ADC_SDO => ADC_SDO.IN1
 ADC_SDI << adc_control:ADC.ADC_DIN
+pressure_buttons[0] => LED[6].DATAIN
+pressure_buttons[1] => LED[7].DATAIN
 
 
 |project329|adc_control:ADC

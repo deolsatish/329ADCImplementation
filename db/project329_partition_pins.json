@@ -60,6 +60,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "pressure_buttons[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pressure_buttons[1]",
+					"strict" : false
+				},
+				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				},
