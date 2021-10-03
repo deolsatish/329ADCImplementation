@@ -1,0 +1,10 @@
+|pressure
+clk => ~NO_FANOUT~
+slider => LED[3].DATAIN
+slider2 => LED[4].DATAIN
+slider3 => LED[5].DATAIN
+LED[3] << slider.DB_MAX_OUTPUT_PORT_TYPE
+LED[4] << slider2.DB_MAX_OUTPUT_PORT_TYPE
+LED[5] << slider3.DB_MAX_OUTPUT_PORT_TYPE
+
+
